@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
 
 class RandomWords extends StatefulWidget {
   @override
-  _RandomWordsState createState() => _RandomWordsState();
+  State<RandomWords> createState() => _RandomWordsState();
 }
 
 class _RandomWordsState extends State<RandomWords> {
@@ -28,6 +28,7 @@ class _RandomWordsState extends State<RandomWords> {
       appBar: AppBar(
         title: Text('Startup Name Generator'),
       ),
+      body: _buildSuggestions(),
     );
   }
 
